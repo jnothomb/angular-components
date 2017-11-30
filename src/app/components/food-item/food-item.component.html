@@ -5,5 +5,7 @@
   <li>
     Calories : {{food.calories}} kcal.
   </li>
+  <!-- for the below to work, we first need to define the route -->
+  <a [routerLink]="['/food',food.id]">See Details</a>
   <button (click)="handleDelete()">delete!</button>
 </div>
